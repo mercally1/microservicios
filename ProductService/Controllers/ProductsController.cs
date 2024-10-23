@@ -10,9 +10,9 @@ namespace ProductService.Controllers;
 
 public class ProductsController : ControllerBase
 {
-    private readonly ProductContext _context;
+    private readonly ProductDbContext _context;
 
-    public ProductsController(ProductContext productContext)
+    public ProductsController(ProductDbContext productContext)
     {
         _context = productContext;
     }
