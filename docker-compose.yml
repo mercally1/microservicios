@@ -1,0 +1,9 @@
+services:
+  product-service:
+    build:
+      context: ./ProductService
+    ports:
+      - "8001:8080"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ConnectionStrings__DefaultConnection=Server=JMERCALLY\MSSQLSERVER01;Database=ProductDb;IntegratedSecurity=true;TrustServerCertificate=True;
